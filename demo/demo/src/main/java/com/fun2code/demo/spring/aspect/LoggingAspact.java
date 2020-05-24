@@ -17,9 +17,9 @@ public class LoggingAspact {
 //setup logger
 	private Logger logger=Logger.getLogger(getClass().getName());
 	//setup pointcut declaration
-	@Pointcut("execution(* com.microstepmis.demo.spring.PersonController.*.*(..))")
+	@Pointcut("execution(* com.fun2code.demo.spring.PersonController.*.*(..))")
 	private void forcontroller() {}
-	@Pointcut("execution(* com.microstepmis.demo.spring.repository.*.*(..))")
+	@Pointcut("execution(* com.fun2code.demo.spring.repository.*.*(..))")
 	private void forRepository() {}
 	@Pointcut("forcontroller()||forRepository() ")
 	private void forAppFlow() {	}
